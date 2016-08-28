@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NLog;
 
 namespace Autocomplete.Library
 {
@@ -37,7 +34,5 @@ namespace Autocomplete.Library
         private readonly Dictionary<string, DictItem[]> _cache;
         private readonly Func<string, Trie<DictItem>, IEnumerable<DictItem>> _algorithm;
         private readonly int _itemCount;
-
-        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
     }
 }
