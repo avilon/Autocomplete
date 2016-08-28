@@ -5,33 +5,42 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using NLog;
+using NLog.LayoutRenderers;
 
 namespace TcpServer
 {
+    /// <summary>
+    /// Запуск TCP-сервера.
+    /// </summary>
+    /// <remarks>
+    /// Без параметров читает файл test.in в текущем каталоге и прослушивает порт 11000
+    /// Номер порта можно передать в первом параметре, имя файла - во втором
+    /// </remarks>
     class Program
     {
-        static void Main(string[] arg)
+        static void Main(string[] args)
         {
             try
             {
-                string fileName;
-                int portNumber;
-                    
-                if (arg.Length > 0)
-                    fileName = arg[0];
-                else
-                    fileName = "test.in";
+                string fileName = "test.in";
+                int portNumber = 11000;
 
-                if (arg.Length > 1)
-                    portNumber = int.Parse(arg[1]);
-                else
-                    portNumber = 11000;
-
-                //Config.InitConfig(file, portNumber);
+                if (args.Length > 0)
+                    portNumber = int.Parse(args[0]);
+                if (args.Length > 1)
+                    fileName = args[1];
 
                 Server server = new Server(portNumber, fileName);
 
-                server.RunAsync().Wait();
+                if (File.Exists(fileName))
+                {
+                    server.RunAsync().Wait();
+                }
+                else
+                {
+                    logger.Error("File {0} not found, server not run", fileName);
+                }
             }
             catch (AggregateException ae)
             {
@@ -43,5 +52,7 @@ namespace TcpServer
                 Console.WriteLine(ex.Message);
             }
         }
+
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
     }
 }

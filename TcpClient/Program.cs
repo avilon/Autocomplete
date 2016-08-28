@@ -7,6 +7,14 @@ using NLog;
 
 namespace TcpClient
 {
+    /// <summary>
+    /// Реализация клиентской части
+    /// </summary>
+    /// <remarks>
+    /// Если запускать без параметров, то выполняется попытка подключения к localhost:11000
+    /// При задании параметров имя хоста передается в первом, порт - во второмпараметре:
+    /// TcpClient host_name port_number
+    /// </remarks>
     class Program
     {
         static void Main(string[] args)
