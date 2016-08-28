@@ -39,7 +39,7 @@ namespace Autocomplete.Library
         /// <returns></returns>
         public IEnumerable<T> GetPrefixNode(string prefix)
         {
-            return _root.GetAllNodesByPrefix(prefix);// GetByPrefix(prefixKey);
+            return _root.GetAllNodesByPrefix(prefix);
         }
 
         private readonly TrieNode<T> _root;
