@@ -61,7 +61,7 @@ namespace TcpClient
                         string prefix = Console.ReadLine();
                         string command = $"get <{prefix}>";
 
-                        logger.Info("get <{0}>", prefix);
+                        //logger.Info("get <{0}>", prefix);
 
                         using (StreamReader sr = new StreamReader(stream, Encoding.ASCII))
                         using (StreamWriter sw = new StreamWriter(stream, Encoding.ASCII))
@@ -73,7 +73,7 @@ namespace TcpClient
                             {
                                 string s = await sr.ReadLineAsync();
                                 Console.WriteLine(s);
-                                logger.Info(s);
+                                //logger.Info(s);
                             }
                             Console.WriteLine();
                         }

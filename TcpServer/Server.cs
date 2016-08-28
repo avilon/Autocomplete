@@ -32,10 +32,6 @@ namespace TcpServer
             _fileName = "test.in";
         }
 
-        /// <summary>
-        /// Запуск сервера
-        /// </summary>
-        /// <returns></returns>
         public async Task RunAsync()
         {
             CreateAutocomplete();
@@ -44,10 +40,6 @@ namespace TcpServer
             await WorkWithClientAsync();
         }
 
-        /// <summary>
-        /// Обслуживание клиентских пдключений
-        /// </summary>
-        /// <returns></returns>
         private async Task WorkWithClientAsync()
         {
             while (true)
