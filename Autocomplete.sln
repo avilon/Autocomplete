@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocomplete", "Autocomplete\Autocomplete.csproj", "{AA9CBAB0-76AD-4D43-81FC-57307233E5A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpServer", "TcpServer\TcpServer.csproj", "{1FB58528-70D3-4C7C-838F-D638D2D390DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClient", "TcpClient\TcpClient.csproj", "{18F04321-C037-4982-95C2-018C89996BEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA9CBAB0-76AD-4D43-81FC-57307233E5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9CBAB0-76AD-4D43-81FC-57307233E5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9CBAB0-76AD-4D43-81FC-57307233E5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9CBAB0-76AD-4D43-81FC-57307233E5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB58528-70D3-4C7C-838F-D638D2D390DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB58528-70D3-4C7C-838F-D638D2D390DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB58528-70D3-4C7C-838F-D638D2D390DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB58528-70D3-4C7C-838F-D638D2D390DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F04321-C037-4982-95C2-018C89996BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F04321-C037-4982-95C2-018C89996BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F04321-C037-4982-95C2-018C89996BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F04321-C037-4982-95C2-018C89996BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
