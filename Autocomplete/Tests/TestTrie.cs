@@ -10,6 +10,12 @@ using NUnit.Framework;
 
 namespace Autocomplete.Tests
 {
+    /// <summary>
+    /// Экспресс-тест дерева
+    /// </summary>
+    /// <remarks>
+    /// TODO: Путь до тестового файла перенести в конфиг приложения
+    /// </remarks>
     [TestFixture]
     public class TestTrie
     {

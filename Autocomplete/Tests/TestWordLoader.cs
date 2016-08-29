@@ -13,6 +13,9 @@ namespace Autocomplete.Tests
         /// <summary>
         /// проверим заполнение дерева на тестовом файле ( 100000 строк )
         /// </summary>
+        /// <remarks>
+        /// TODO: Путь до тестового файла перенести в конфиг приложения
+        /// </remarks>
         [Test]
         public void TestLoadTrie()
         {

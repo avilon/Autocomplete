@@ -11,6 +11,12 @@ using Autocomplete;
 
 namespace Autocomplete.Tests
 {
+    /// <summary>
+    /// Тест загрузчика словаря
+    /// </summary>
+    /// <remarks>
+    /// TODO: Путь до тестового файла перенести в конфиг приложения
+    /// </remarks>
     [TestFixture]
     public class TestAutocomplete
     {
