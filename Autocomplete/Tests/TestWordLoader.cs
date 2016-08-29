@@ -16,8 +16,8 @@ namespace Autocomplete.Tests
         [Test]
         public void TestLoadTrie()
         {
-            WordLoader wl = new WordLoader();
-            WordContainer wc = wl.Load("test.in");
+            WordLoader wl = new WordLoader();            
+            WordContainer wc = wl.Load(@"C:\AA\\Frisby\test.in");
             Assert.AreEqual(100000, wc.Trie.Count);
         }
     }
